@@ -67,7 +67,7 @@ class Status extends Component {
 
     this.setState({
       ...rest,
-      spotCost: web3.utils.fromWei(spotCost, 'ether'),
+      spotCost: web3.utils.fromWei(spotCost.toString(), 'ether'),
     });
   }
 

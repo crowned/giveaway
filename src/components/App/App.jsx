@@ -8,6 +8,9 @@ import AdminRouteContainer from '../../containers/AdminRouteContainer';
 
 import Home from '../../scenes/Home';
 
+import AccountUnavailable from '../AccountUnavailable';
+import Loading from  '../Loading';
+
 const ONE_SECOND = 1000;
 
 const GlobalStyle = createGlobalStyle`
@@ -57,6 +60,7 @@ class App extends Component {
 
   componentDidMount() {
     this.props.onLoad();
+
     this.pollAccounts();
   }
 
@@ -97,12 +101,14 @@ class App extends Component {
     // payoutToWinner - 3014999996985000000000
     Contract.events.Winner((err, result) => {
       this.props.onWinner(err, result);
-      const { returnValues } = result
+      if (!err) {
+        const { returnValues } = result
 
-      const ownerFee = web3.utils.fromWei(returnValues.ownerFee, 'ether');
-      const payoutToWinner = web3.utils.fromWei(returnValues.payoutToWinner, 'ether');
-      const totalPayout = web3.utils.fromWei(returnValues.totalPayout, 'ether');
-      const { winner } = returnValues;
+        const ownerFee = web3.utils.fromWei(returnValues.ownerFee, 'ether');
+        const payoutToWinner = web3.utils.fromWei(returnValues.payoutToWinner, 'ether');
+        const totalPayout = web3.utils.fromWei(returnValues.totalPayout, 'ether');
+        const { winner } = returnValues;
+      }
 
     });
   }
@@ -110,6 +116,14 @@ class App extends Component {
   render() {
     const { web3, giveaway, accounts } = this.state;
     const finishedLoading = !web3.isLoading && !giveaway.isLoading && !accounts.isLoading;
+
+    if (!finishedLoading) {
+      return <p>Loading</p>
+    }
+
+    if (_.isEmpty(accounts.accounts)) {
+      return <AccountUnavailable />
+    }
 
     return (
       <Router>

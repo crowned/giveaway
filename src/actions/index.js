@@ -8,9 +8,8 @@ export const loadWeb3 = () => {
     return dispatch({
       type: 'WEB3_INITIALIZED',
       payload: getWeb3,
-    }).then(() => {
+    }).then((value) => {
       dispatch(getAccounts());
-      dispatch(loadContracts());
     });
   };
 };
@@ -22,7 +21,9 @@ export const getAccounts = () => {
     return dispatch({
       type: 'GET_ACCOUNTS',
       payload: web3.eth.getAccounts(),
-    });
+    })
+    .then(() => dispatch(loadContracts()))
+    .catch(err => err);
   };
 };
 

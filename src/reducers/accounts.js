@@ -1,5 +1,6 @@
 const initialState = {
   isLoading: true,
+  accounts: [],
 };
 
 export default function(state = initialState, action) {
@@ -13,8 +14,14 @@ export default function(state = initialState, action) {
     case 'GET_ACCOUNTS_FULFILLED':
       return {
         ...state,
-        accountChanged: true,
         accounts: payload,
+        isLoading: false,
+      }
+    case 'GET_ACCOUNTS_REJECTED':
+      return {
+        ...state,
+        withErrors: true,
+        errors: payload,
         isLoading: false,
       }
     default:
