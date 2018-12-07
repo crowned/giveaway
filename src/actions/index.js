@@ -1,7 +1,7 @@
 import Giveaway from '../build/contracts/Giveaway.json';
 import getWeb3 from '../utils/getWeb3';
 
-const address = '0xdba823b6f5bc545811a18ec7c9dbf591ec669169';
+const address = '0x74bb99ef163e9e0c6bb9a0408028bb7f63fea089';
 
 export const loadWeb3 = () => {
   return dispatch => {
