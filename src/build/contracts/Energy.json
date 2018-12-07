@@ -224,14 +224,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/energy.sol",
     "exportedSymbols": {
       "Energy": [
-        999
+        1001
       ]
     },
-    "id": 1000,
+    "id": 1002,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 917,
+        "id": 919,
         "literals": [
           "solidity",
           "^",
@@ -247,9 +247,9 @@
         "contractKind": "interface",
         "documentation": "@title Energy represents the sub-token in VeChainThor which conforms VIP180(ERC20) standard.\n The name of token is \"VeThor\" and 1 THOR equals to 1e18 wei. The main function of VeThor is to pay for the transaction fee. \n VeThor is generated from VET, so the initial supply of VeThor is zero in the genesis block.\n The growth rate of VeThor is 5000000000 wei per token(VET) per second, that is to say 1 VET will produce about 0.000432 THOR per day.\n The miner will charge 30 percent of transation fee and 70 percent will be burned. So the total supply of VeThor is dynamic.",
         "fullyImplemented": false,
-        "id": 999,
+        "id": 1001,
         "linearizedBaseContracts": [
-          999
+          1001
         ],
         "name": "Energy",
         "nodeType": "ContractDefinition",
@@ -257,7 +257,7 @@
           {
             "body": null,
             "documentation": "/ @return TOKEN name: \"VeThor\".",
-            "id": 922,
+            "id": 924,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -265,22 +265,22 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 918,
+              "id": 920,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "690:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 921,
+              "id": 923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 920,
+                  "id": 922,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 922,
+                  "scope": 924,
                   "src": "716:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -289,7 +289,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 919,
+                    "id": 921,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "716:6:3",
@@ -304,7 +304,7 @@
               ],
               "src": "715:8:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "677:47:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -313,7 +313,7 @@
           {
             "body": null,
             "documentation": "@notice 1e18 wei is equal to 1 THOR\n @return 18",
-            "id": 927,
+            "id": 929,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -321,22 +321,22 @@
             "name": "decimals",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 923,
+              "id": 925,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "810:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 926,
+              "id": 928,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 925,
+                  "id": 927,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 927,
+                  "scope": 929,
                   "src": "836:5:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -345,7 +345,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 924,
+                    "id": 926,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "836:5:3",
@@ -360,7 +360,7 @@
               ],
               "src": "835:7:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "793:50:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -369,7 +369,7 @@
           {
             "body": null,
             "documentation": "@return \"VTHO\"",
-            "id": 932,
+            "id": 934,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -377,22 +377,22 @@
             "name": "symbol",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 928,
+              "id": 930,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "887:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 931,
+              "id": 933,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 930,
+                  "id": 932,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 932,
+                  "scope": 934,
                   "src": "913:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -401,7 +401,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 929,
+                    "id": 931,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "913:6:3",
@@ -416,7 +416,7 @@
               ],
               "src": "912:8:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "872:49:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -425,7 +425,7 @@
           {
             "body": null,
             "documentation": "@return total supply of VeThor",
-            "id": 937,
+            "id": 939,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -433,22 +433,22 @@
             "name": "totalSupply",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 933,
+              "id": 935,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "986:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 936,
+              "id": 938,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 935,
+                  "id": 937,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 937,
+                  "scope": 939,
                   "src": "1012:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -457,7 +457,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 934,
+                    "id": 936,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1012:7:3",
@@ -472,7 +472,7 @@
               ],
               "src": "1011:9:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "966:55:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -481,7 +481,7 @@
           {
             "body": null,
             "documentation": "@return total amount of burned VeThor",
-            "id": 942,
+            "id": 944,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -489,22 +489,22 @@
             "name": "totalBurned",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 938,
+              "id": 940,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1093:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 941,
+              "id": 943,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 940,
+                  "id": 942,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 942,
+                  "scope": 944,
                   "src": "1118:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -513,7 +513,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 939,
+                    "id": 941,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1118:7:3",
@@ -528,7 +528,7 @@
               ],
               "src": "1117:9:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1073:54:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -537,7 +537,7 @@
           {
             "body": null,
             "documentation": "@return amount of VeThor in account '_owner'.",
-            "id": 949,
+            "id": 951,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -545,15 +545,15 @@
             "name": "balanceOf",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 945,
+              "id": 947,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 944,
+                  "id": 946,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 949,
+                  "scope": 951,
                   "src": "1206:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -562,7 +562,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 943,
+                    "id": 945,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1206:7:3",
@@ -579,15 +579,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 948,
+              "id": 950,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 947,
+                  "id": 949,
                   "name": "balance",
                   "nodeType": "VariableDeclaration",
-                  "scope": 949,
+                  "scope": 951,
                   "src": "1245:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -596,7 +596,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 946,
+                    "id": 948,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1245:7:3",
@@ -611,7 +611,7 @@
               ],
               "src": "1244:17:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1187:75:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -620,7 +620,7 @@
           {
             "body": null,
             "documentation": "@notice transfer '_amount' of VeThor from msg sender to account '_to'",
-            "id": 958,
+            "id": 960,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -628,15 +628,15 @@
             "name": "transfer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 954,
+              "id": 956,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 951,
+                  "id": 953,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1364:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -645,7 +645,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 950,
+                    "id": 952,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:7:3",
@@ -659,10 +659,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 953,
+                  "id": 955,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1377:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -671,7 +671,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 952,
+                    "id": 954,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1377:7:3",
@@ -688,15 +688,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 957,
+              "id": 959,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 956,
+                  "id": 958,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1412:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -705,7 +705,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 955,
+                    "id": 957,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1412:4:3",
@@ -720,7 +720,7 @@
               ],
               "src": "1411:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1346:80:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -729,7 +729,7 @@
           {
             "body": null,
             "documentation": "@notice It's not a VIP180(ERC20)'s standard method.\n transfer '_amount' of VeThor from account '_from' to account '_to'\n If account '_from' is an external account, '_from' must be the msg sender, or\n if account '_from' is a contract account, msg sender must be the master of contract '_from'.",
-            "id": 969,
+            "id": 971,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -737,15 +737,15 @@
             "name": "move",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 965,
+              "id": 967,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 960,
+                  "id": 962,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1768:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -754,7 +754,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 959,
+                    "id": 961,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1768:7:3",
@@ -768,10 +768,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 962,
+                  "id": 964,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1783:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -780,7 +780,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 961,
+                    "id": 963,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1783:7:3",
@@ -794,10 +794,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 964,
+                  "id": 966,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1796:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -806,7 +806,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 963,
+                    "id": 965,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1796:7:3",
@@ -823,15 +823,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 968,
+              "id": 970,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 967,
+                  "id": 969,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1831:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -840,7 +840,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 966,
+                    "id": 968,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1831:4:3",
@@ -855,7 +855,7 @@
               ],
               "src": "1830:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1754:91:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -864,7 +864,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method.",
-            "id": 980,
+            "id": 982,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -872,15 +872,15 @@
             "name": "transferFrom",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 976,
+              "id": 978,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 971,
+                  "id": 973,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1929:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -889,7 +889,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 970,
+                    "id": 972,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1929:7:3",
@@ -903,10 +903,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 973,
+                  "id": 975,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1944:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -915,7 +915,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 972,
+                    "id": 974,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1944:7:3",
@@ -929,10 +929,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 975,
+                  "id": 977,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1957:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -941,7 +941,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 974,
+                    "id": 976,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1957:7:3",
@@ -958,15 +958,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 979,
+              "id": 981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 978,
+                  "id": 980,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1991:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -975,7 +975,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 977,
+                    "id": 979,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1991:4:3",
@@ -990,7 +990,7 @@
               ],
               "src": "1990:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1907:98:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -999,7 +999,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method.\n @return the remaining amount of VeThor that the '_spender' is able to withdraw from '_owner'.",
-            "id": 989,
+            "id": 991,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1007,15 +1007,15 @@
             "name": "allowance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 985,
+              "id": 987,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 982,
+                  "id": 984,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2188:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1024,7 +1024,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 981,
+                    "id": 983,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2188:7:3",
@@ -1038,10 +1038,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 984,
+                  "id": 986,
                   "name": "_spender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2204:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1050,7 +1050,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 983,
+                    "id": 985,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2204:7:3",
@@ -1067,15 +1067,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 988,
+              "id": 990,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 987,
+                  "id": 989,
                   "name": "remaining",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2246:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1084,7 +1084,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 986,
+                    "id": 988,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2246:7:3",
@@ -1099,7 +1099,7 @@
               ],
               "src": "2245:19:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "2169:96:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1108,7 +1108,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method which means approving a '_value' to be transferred to _spender from msg sender.",
-            "id": 998,
+            "id": 1000,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1116,15 +1116,15 @@
             "name": "approve",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 994,
+              "id": 996,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 991,
+                  "id": 993,
                   "name": "_spender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2423:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1133,7 +1133,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 990,
+                    "id": 992,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2423:7:3",
@@ -1147,10 +1147,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 993,
+                  "id": 995,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2441:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1159,7 +1159,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 992,
+                    "id": 994,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2441:7:3",
@@ -1176,15 +1176,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 997,
+              "id": 999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 996,
+                  "id": 998,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2475:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1193,7 +1193,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 995,
+                    "id": 997,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2475:4:3",
@@ -1208,14 +1208,14 @@
               ],
               "src": "2474:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "2406:83:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1000,
+        "scope": 1002,
         "src": "615:1876:3"
       }
     ],
@@ -1225,14 +1225,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/energy.sol",
     "exportedSymbols": {
       "Energy": [
-        999
+        1001
       ]
     },
-    "id": 1000,
+    "id": 1002,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 917,
+        "id": 919,
         "literals": [
           "solidity",
           "^",
@@ -1248,9 +1248,9 @@
         "contractKind": "interface",
         "documentation": "@title Energy represents the sub-token in VeChainThor which conforms VIP180(ERC20) standard.\n The name of token is \"VeThor\" and 1 THOR equals to 1e18 wei. The main function of VeThor is to pay for the transaction fee. \n VeThor is generated from VET, so the initial supply of VeThor is zero in the genesis block.\n The growth rate of VeThor is 5000000000 wei per token(VET) per second, that is to say 1 VET will produce about 0.000432 THOR per day.\n The miner will charge 30 percent of transation fee and 70 percent will be burned. So the total supply of VeThor is dynamic.",
         "fullyImplemented": false,
-        "id": 999,
+        "id": 1001,
         "linearizedBaseContracts": [
-          999
+          1001
         ],
         "name": "Energy",
         "nodeType": "ContractDefinition",
@@ -1258,7 +1258,7 @@
           {
             "body": null,
             "documentation": "/ @return TOKEN name: \"VeThor\".",
-            "id": 922,
+            "id": 924,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1266,22 +1266,22 @@
             "name": "name",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 918,
+              "id": 920,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "690:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 921,
+              "id": 923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 920,
+                  "id": 922,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 922,
+                  "scope": 924,
                   "src": "716:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1290,7 +1290,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 919,
+                    "id": 921,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "716:6:3",
@@ -1305,7 +1305,7 @@
               ],
               "src": "715:8:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "677:47:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1314,7 +1314,7 @@
           {
             "body": null,
             "documentation": "@notice 1e18 wei is equal to 1 THOR\n @return 18",
-            "id": 927,
+            "id": 929,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1322,22 +1322,22 @@
             "name": "decimals",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 923,
+              "id": 925,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "810:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 926,
+              "id": 928,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 925,
+                  "id": 927,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 927,
+                  "scope": 929,
                   "src": "836:5:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1346,7 +1346,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 924,
+                    "id": 926,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "836:5:3",
@@ -1361,7 +1361,7 @@
               ],
               "src": "835:7:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "793:50:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1370,7 +1370,7 @@
           {
             "body": null,
             "documentation": "@return \"VTHO\"",
-            "id": 932,
+            "id": 934,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1378,22 +1378,22 @@
             "name": "symbol",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 928,
+              "id": 930,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "887:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 931,
+              "id": 933,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 930,
+                  "id": 932,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 932,
+                  "scope": 934,
                   "src": "913:6:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1402,7 +1402,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 929,
+                    "id": 931,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "913:6:3",
@@ -1417,7 +1417,7 @@
               ],
               "src": "912:8:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "872:49:3",
             "stateMutability": "pure",
             "superFunction": null,
@@ -1426,7 +1426,7 @@
           {
             "body": null,
             "documentation": "@return total supply of VeThor",
-            "id": 937,
+            "id": 939,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1434,22 +1434,22 @@
             "name": "totalSupply",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 933,
+              "id": 935,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "986:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 936,
+              "id": 938,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 935,
+                  "id": 937,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 937,
+                  "scope": 939,
                   "src": "1012:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1458,7 +1458,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 934,
+                    "id": 936,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1012:7:3",
@@ -1473,7 +1473,7 @@
               ],
               "src": "1011:9:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "966:55:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1482,7 +1482,7 @@
           {
             "body": null,
             "documentation": "@return total amount of burned VeThor",
-            "id": 942,
+            "id": 944,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1490,22 +1490,22 @@
             "name": "totalBurned",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 938,
+              "id": 940,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1093:2:3"
             },
             "payable": false,
             "returnParameters": {
-              "id": 941,
+              "id": 943,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 940,
+                  "id": 942,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 942,
+                  "scope": 944,
                   "src": "1118:7:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1514,7 +1514,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 939,
+                    "id": 941,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1118:7:3",
@@ -1529,7 +1529,7 @@
               ],
               "src": "1117:9:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1073:54:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1538,7 +1538,7 @@
           {
             "body": null,
             "documentation": "@return amount of VeThor in account '_owner'.",
-            "id": 949,
+            "id": 951,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1546,15 +1546,15 @@
             "name": "balanceOf",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 945,
+              "id": 947,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 944,
+                  "id": 946,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 949,
+                  "scope": 951,
                   "src": "1206:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1563,7 +1563,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 943,
+                    "id": 945,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1206:7:3",
@@ -1580,15 +1580,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 948,
+              "id": 950,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 947,
+                  "id": 949,
                   "name": "balance",
                   "nodeType": "VariableDeclaration",
-                  "scope": 949,
+                  "scope": 951,
                   "src": "1245:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1597,7 +1597,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 946,
+                    "id": 948,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1245:7:3",
@@ -1612,7 +1612,7 @@
               ],
               "src": "1244:17:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1187:75:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -1621,7 +1621,7 @@
           {
             "body": null,
             "documentation": "@notice transfer '_amount' of VeThor from msg sender to account '_to'",
-            "id": 958,
+            "id": 960,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1629,15 +1629,15 @@
             "name": "transfer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 954,
+              "id": 956,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 951,
+                  "id": 953,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1364:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1646,7 +1646,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 950,
+                    "id": 952,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1364:7:3",
@@ -1660,10 +1660,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 953,
+                  "id": 955,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1377:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1672,7 +1672,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 952,
+                    "id": 954,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1377:7:3",
@@ -1689,15 +1689,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 957,
+              "id": 959,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 956,
+                  "id": 958,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 958,
+                  "scope": 960,
                   "src": "1412:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1706,7 +1706,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 955,
+                    "id": 957,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1412:4:3",
@@ -1721,7 +1721,7 @@
               ],
               "src": "1411:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1346:80:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1730,7 +1730,7 @@
           {
             "body": null,
             "documentation": "@notice It's not a VIP180(ERC20)'s standard method.\n transfer '_amount' of VeThor from account '_from' to account '_to'\n If account '_from' is an external account, '_from' must be the msg sender, or\n if account '_from' is a contract account, msg sender must be the master of contract '_from'.",
-            "id": 969,
+            "id": 971,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1738,15 +1738,15 @@
             "name": "move",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 965,
+              "id": 967,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 960,
+                  "id": 962,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1768:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1755,7 +1755,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 959,
+                    "id": 961,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1768:7:3",
@@ -1769,10 +1769,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 962,
+                  "id": 964,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1783:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1781,7 +1781,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 961,
+                    "id": 963,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1783:7:3",
@@ -1795,10 +1795,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 964,
+                  "id": 966,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1796:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1807,7 +1807,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 963,
+                    "id": 965,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1796:7:3",
@@ -1824,15 +1824,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 968,
+              "id": 970,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 967,
+                  "id": 969,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 969,
+                  "scope": 971,
                   "src": "1831:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1841,7 +1841,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 966,
+                    "id": 968,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1831:4:3",
@@ -1856,7 +1856,7 @@
               ],
               "src": "1830:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1754:91:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1865,7 +1865,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method.",
-            "id": 980,
+            "id": 982,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1873,15 +1873,15 @@
             "name": "transferFrom",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 976,
+              "id": 978,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 971,
+                  "id": 973,
                   "name": "_from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1929:13:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1890,7 +1890,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 970,
+                    "id": 972,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1929:7:3",
@@ -1904,10 +1904,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 973,
+                  "id": 975,
                   "name": "_to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1944:11:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1916,7 +1916,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 972,
+                    "id": 974,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1944:7:3",
@@ -1930,10 +1930,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 975,
+                  "id": 977,
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1957:15:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1942,7 +1942,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 974,
+                    "id": 976,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1957:7:3",
@@ -1959,15 +1959,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 979,
+              "id": 981,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 978,
+                  "id": 980,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 980,
+                  "scope": 982,
                   "src": "1991:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1976,7 +1976,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 977,
+                    "id": 979,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1991:4:3",
@@ -1991,7 +1991,7 @@
               ],
               "src": "1990:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "1907:98:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2000,7 +2000,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method.\n @return the remaining amount of VeThor that the '_spender' is able to withdraw from '_owner'.",
-            "id": 989,
+            "id": 991,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2008,15 +2008,15 @@
             "name": "allowance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 985,
+              "id": 987,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 982,
+                  "id": 984,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2188:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2025,7 +2025,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 981,
+                    "id": 983,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2188:7:3",
@@ -2039,10 +2039,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 984,
+                  "id": 986,
                   "name": "_spender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2204:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2051,7 +2051,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 983,
+                    "id": 985,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2204:7:3",
@@ -2068,15 +2068,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 988,
+              "id": 990,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 987,
+                  "id": 989,
                   "name": "remaining",
                   "nodeType": "VariableDeclaration",
-                  "scope": 989,
+                  "scope": 991,
                   "src": "2246:17:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2085,7 +2085,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 986,
+                    "id": 988,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2246:7:3",
@@ -2100,7 +2100,7 @@
               ],
               "src": "2245:19:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "2169:96:3",
             "stateMutability": "view",
             "superFunction": null,
@@ -2109,7 +2109,7 @@
           {
             "body": null,
             "documentation": "@notice It's a VIP180(ERC20)'s standard method which means approving a '_value' to be transferred to _spender from msg sender.",
-            "id": 998,
+            "id": 1000,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2117,15 +2117,15 @@
             "name": "approve",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 994,
+              "id": 996,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 991,
+                  "id": 993,
                   "name": "_spender",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2423:16:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2134,7 +2134,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 990,
+                    "id": 992,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2423:7:3",
@@ -2148,10 +2148,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 993,
+                  "id": 995,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2441:14:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2160,7 +2160,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 992,
+                    "id": 994,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2441:7:3",
@@ -2177,15 +2177,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 997,
+              "id": 999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 996,
+                  "id": 998,
                   "name": "success",
                   "nodeType": "VariableDeclaration",
-                  "scope": 998,
+                  "scope": 1000,
                   "src": "2475:12:3",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2194,7 +2194,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 995,
+                    "id": 997,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2475:4:3",
@@ -2209,14 +2209,14 @@
               ],
               "src": "2474:14:3"
             },
-            "scope": 999,
+            "scope": 1001,
             "src": "2406:83:3",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1000,
+        "scope": 1002,
         "src": "615:1876:3"
       }
     ],
@@ -2228,5 +2228,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-06T21:12:16.167Z"
+  "updatedAt": "2018-12-07T03:18:58.595Z"
 }

@@ -352,14 +352,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/prototype.sol",
     "exportedSymbols": {
       "Prototype": [
-        1262
+        1264
       ]
     },
-    "id": 1263,
+    "id": 1265,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1130,
+        "id": 1132,
         "literals": [
           "solidity",
           "^",
@@ -375,9 +375,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1262,
+        "id": 1264,
         "linearizedBaseContracts": [
-          1262
+          1264
         ],
         "name": "Prototype",
         "nodeType": "ContractDefinition",
@@ -385,7 +385,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return master address of self",
-            "id": 1137,
+            "id": 1139,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -393,15 +393,15 @@
             "name": "master",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1133,
+              "id": 1135,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1132,
+                  "id": 1134,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1137,
+                  "scope": 1139,
                   "src": "1580:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -410,7 +410,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1131,
+                    "id": 1133,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1580:7:7",
@@ -427,15 +427,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1136,
+              "id": 1138,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1135,
+                  "id": 1137,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1137,
+                  "scope": 1139,
                   "src": "1616:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -444,7 +444,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1134,
+                    "id": 1136,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1616:7:7",
@@ -459,7 +459,7 @@
               ],
               "src": "1615:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "1564:61:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -468,7 +468,7 @@
           {
             "body": null,
             "documentation": "@notice 'newMaster' will be set to contract 'self' and this function only works when msg sender is the old master.\n @param self contract address\n @param newMaster new master account which will be set.",
-            "id": 1144,
+            "id": 1146,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -476,15 +476,15 @@
             "name": "setMaster",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1142,
+              "id": 1144,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1139,
+                  "id": 1141,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1144,
+                  "scope": 1146,
                   "src": "1873:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -493,7 +493,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1138,
+                    "id": 1140,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1873:7:7",
@@ -507,10 +507,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1141,
+                  "id": 1143,
                   "name": "newMaster",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1144,
+                  "scope": 1146,
                   "src": "1887:17:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -519,7 +519,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1140,
+                    "id": 1142,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1887:7:7",
@@ -536,12 +536,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1143,
+              "id": 1145,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1914:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "1854:61:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -550,7 +550,7 @@
           {
             "body": null,
             "documentation": "@param self account address which may be contract account or external account address.\n @param blockNumber balance will be calculated at blockNumber\n @return the amount of VET at blockNumber",
-            "id": 1153,
+            "id": 1155,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -558,15 +558,15 @@
             "name": "balance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1149,
+              "id": 1151,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1146,
+                  "id": 1148,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2151:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -575,7 +575,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1145,
+                    "id": 1147,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2151:7:7",
@@ -589,10 +589,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1148,
+                  "id": 1150,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2165:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -601,7 +601,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1147,
+                    "id": 1149,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2165:4:7",
@@ -618,15 +618,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1152,
+              "id": 1154,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1151,
+                  "id": 1153,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2205:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -635,7 +635,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1150,
+                    "id": 1152,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2205:7:7",
@@ -650,7 +650,7 @@
               ],
               "src": "2204:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2134:80:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -659,7 +659,7 @@
           {
             "body": null,
             "documentation": "@param self account address which may be contract account or external account address.\n @param blockNumber energy will be calculated at blockNumber\n @return the amount of energy at blockNumber",
-            "id": 1162,
+            "id": 1164,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -667,15 +667,15 @@
             "name": "energy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1158,
+              "id": 1160,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1155,
+                  "id": 1157,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2451:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -684,7 +684,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1154,
+                    "id": 1156,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2451:7:7",
@@ -698,10 +698,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1157,
+                  "id": 1159,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2465:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -710,7 +710,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1156,
+                    "id": 1158,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2465:4:7",
@@ -727,15 +727,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1161,
+              "id": 1163,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1160,
+                  "id": 1162,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2505:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -744,7 +744,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1159,
+                    "id": 1161,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2505:7:7",
@@ -759,7 +759,7 @@
               ],
               "src": "2504:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2435:79:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -768,7 +768,7 @@
           {
             "body": null,
             "documentation": "@param self check if address self is a contract account",
-            "id": 1169,
+            "id": 1171,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -776,15 +776,15 @@
             "name": "hasCode",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1165,
+              "id": 1167,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1164,
+                  "id": 1166,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1169,
+                  "scope": 1171,
                   "src": "2601:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -793,7 +793,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1163,
+                    "id": 1165,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2601:7:7",
@@ -810,15 +810,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1168,
+              "id": 1170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1167,
+                  "id": 1169,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1169,
+                  "scope": 1171,
                   "src": "2637:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -827,7 +827,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1166,
+                    "id": 1168,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2637:4:7",
@@ -842,7 +842,7 @@
               ],
               "src": "2636:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2584:59:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -851,7 +851,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return value indexed by key at self storage",
-            "id": 1178,
+            "id": 1180,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -859,15 +859,15 @@
             "name": "storageFor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1174,
+              "id": 1176,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1171,
+                  "id": 1173,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2759:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -876,7 +876,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1170,
+                    "id": 1172,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2759:7:7",
@@ -890,10 +890,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1173,
+                  "id": 1175,
                   "name": "key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2773:11:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -902,7 +902,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1172,
+                    "id": 1174,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2773:7:7",
@@ -919,15 +919,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1177,
+              "id": 1179,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1176,
+                  "id": 1178,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2808:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -936,7 +936,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1175,
+                    "id": 1177,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2808:7:7",
@@ -951,7 +951,7 @@
               ],
               "src": "2807:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2739:78:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -960,7 +960,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return the creditPlan of contract 'self'",
-            "id": 1187,
+            "id": 1189,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -968,15 +968,15 @@
             "name": "creditPlan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1181,
+              "id": 1183,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1180,
+                  "id": 1182,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2930:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -985,7 +985,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1179,
+                    "id": 1181,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2930:7:7",
@@ -1002,15 +1002,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1186,
+              "id": 1188,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1183,
+                  "id": 1185,
                   "name": "credit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2966:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1019,7 +1019,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1182,
+                    "id": 1184,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2966:7:7",
@@ -1033,10 +1033,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1185,
+                  "id": 1187,
                   "name": "recoveryRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2982:20:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1045,7 +1045,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1184,
+                    "id": 1186,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2982:7:7",
@@ -1060,7 +1060,7 @@
               ],
               "src": "2965:38:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2910:94:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -1069,7 +1069,7 @@
           {
             "body": null,
             "documentation": "@param self contract address \n @param credit original credit\n @param recoveryRate recovery rate of credit",
-            "id": 1196,
+            "id": 1198,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1077,15 +1077,15 @@
             "name": "setCreditPlan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1194,
+              "id": 1196,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1189,
+                  "id": 1191,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3161:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1094,7 +1094,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1188,
+                    "id": 1190,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3161:7:7",
@@ -1108,10 +1108,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1191,
+                  "id": 1193,
                   "name": "credit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3175:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1120,7 +1120,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1190,
+                    "id": 1192,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3175:7:7",
@@ -1134,10 +1134,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1193,
+                  "id": 1195,
                   "name": "recoveryRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3191:20:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1146,7 +1146,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1192,
+                    "id": 1194,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3191:7:7",
@@ -1163,12 +1163,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1195,
+              "id": 1197,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3221:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3138:84:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1177,7 +1177,7 @@
           {
             "body": null,
             "documentation": "@notice check if address 'user' is the user of contract 'self'.",
-            "id": 1205,
+            "id": 1207,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1185,15 +1185,15 @@
             "name": "isUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1201,
+              "id": 1203,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1198,
+                  "id": 1200,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3316:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1202,7 +1202,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1197,
+                    "id": 1199,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3316:7:7",
@@ -1216,10 +1216,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1200,
+                  "id": 1202,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3330:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1228,7 +1228,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1199,
+                    "id": 1201,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3330:7:7",
@@ -1245,15 +1245,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1204,
+              "id": 1206,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1203,
+                  "id": 1205,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3366:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1262,7 +1262,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1202,
+                    "id": 1204,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "3366:4:7",
@@ -1277,7 +1277,7 @@
               ],
               "src": "3365:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3300:72:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -1286,7 +1286,7 @@
           {
             "body": null,
             "documentation": "@notice return the current credit of 'user' of the contract 'self'.",
-            "id": 1214,
+            "id": 1216,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1294,15 +1294,15 @@
             "name": "userCredit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1210,
+              "id": 1212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1207,
+                  "id": 1209,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3474:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1311,7 +1311,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1206,
+                    "id": 1208,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3474:7:7",
@@ -1325,10 +1325,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1209,
+                  "id": 1211,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3488:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1337,7 +1337,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1208,
+                    "id": 1210,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3488:7:7",
@@ -1354,15 +1354,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1213,
+              "id": 1215,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1212,
+                  "id": 1214,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3524:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1371,7 +1371,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1211,
+                    "id": 1213,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3524:7:7",
@@ -1386,7 +1386,7 @@
               ],
               "src": "3523:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3454:79:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -1395,7 +1395,7 @@
           {
             "body": null,
             "documentation": "@notice add address 'user' to the user list of a contract 'self'.",
-            "id": 1221,
+            "id": 1223,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1403,15 +1403,15 @@
             "name": "addUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1219,
+              "id": 1221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1216,
+                  "id": 1218,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1221,
+                  "scope": 1223,
                   "src": "3630:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1420,7 +1420,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1215,
+                    "id": 1217,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3630:7:7",
@@ -1434,10 +1434,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1218,
+                  "id": 1220,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1221,
+                  "scope": 1223,
                   "src": "3644:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1446,7 +1446,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1217,
+                    "id": 1219,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3644:7:7",
@@ -1463,12 +1463,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1220,
+              "id": 1222,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3666:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3613:54:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1477,7 +1477,7 @@
           {
             "body": null,
             "documentation": "@notice remove 'user' from the user list of a contract 'self'.",
-            "id": 1228,
+            "id": 1230,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1485,15 +1485,15 @@
             "name": "removeUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1226,
+              "id": 1228,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1223,
+                  "id": 1225,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1228,
+                  "scope": 1230,
                   "src": "3764:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1502,7 +1502,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1222,
+                    "id": 1224,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3764:7:7",
@@ -1516,10 +1516,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1225,
+                  "id": 1227,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1228,
+                  "scope": 1230,
                   "src": "3778:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1528,7 +1528,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1224,
+                    "id": 1226,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3778:7:7",
@@ -1545,12 +1545,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1227,
+              "id": 1229,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3800:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3744:57:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1559,7 +1559,7 @@
           {
             "body": null,
             "documentation": "@notice msg sender volunteers to be a sponsor of the contract 'self'.",
-            "id": 1233,
+            "id": 1235,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1567,15 +1567,15 @@
             "name": "sponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1231,
+              "id": 1233,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1230,
+                  "id": 1232,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1233,
+                  "scope": 1235,
                   "src": "3902:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1584,7 +1584,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1229,
+                    "id": 1231,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3902:7:7",
@@ -1601,12 +1601,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1232,
+              "id": 1234,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3924:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3885:40:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1615,7 +1615,7 @@
           {
             "body": null,
             "documentation": "@notice msg sender removes itself from the sponsor candidates list of contract 'self'.",
-            "id": 1238,
+            "id": 1240,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1623,15 +1623,15 @@
             "name": "unsponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1236,
+              "id": 1238,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1235,
+                  "id": 1237,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1238,
+                  "scope": 1240,
                   "src": "4046:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1640,7 +1640,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1234,
+                    "id": 1236,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4046:7:7",
@@ -1657,12 +1657,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1237,
+              "id": 1239,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4068:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4027:42:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1671,7 +1671,7 @@
           {
             "body": null,
             "documentation": "@notice check if 'sponsorAddress' is the sponser of contract 'self'.",
-            "id": 1247,
+            "id": 1249,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1679,15 +1679,15 @@
             "name": "isSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1243,
+              "id": 1245,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1240,
+                  "id": 1242,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4171:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1696,7 +1696,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1239,
+                    "id": 1241,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4171:7:7",
@@ -1710,10 +1710,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1242,
+                  "id": 1244,
                   "name": "sponsorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4185:22:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1722,7 +1722,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1241,
+                    "id": 1243,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4185:7:7",
@@ -1739,15 +1739,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1246,
+              "id": 1248,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1245,
+                  "id": 1247,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4231:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1756,7 +1756,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1244,
+                    "id": 1246,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "4231:4:7",
@@ -1771,7 +1771,7 @@
               ],
               "src": "4230:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4152:85:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -1780,7 +1780,7 @@
           {
             "body": null,
             "documentation": "@notice select 'sponsorAddress' to be current selected sponsor of contract 'self'",
-            "id": 1254,
+            "id": 1256,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1788,15 +1788,15 @@
             "name": "selectSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1252,
+              "id": 1254,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1249,
+                  "id": 1251,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1254,
+                  "scope": 1256,
                   "src": "4356:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1805,7 +1805,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1248,
+                    "id": 1250,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4356:7:7",
@@ -1819,10 +1819,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1251,
+                  "id": 1253,
                   "name": "sponsorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1254,
+                  "scope": 1256,
                   "src": "4370:22:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1831,7 +1831,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1250,
+                    "id": 1252,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4370:7:7",
@@ -1848,12 +1848,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1253,
+              "id": 1255,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4402:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4333:70:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1862,7 +1862,7 @@
           {
             "body": null,
             "documentation": "@notice return current selected sponsor of contract 'self'",
-            "id": 1261,
+            "id": 1263,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1870,15 +1870,15 @@
             "name": "currentSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1257,
+              "id": 1259,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1256,
+                  "id": 1258,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1261,
+                  "scope": 1263,
                   "src": "4502:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1887,7 +1887,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1255,
+                    "id": 1257,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4502:7:7",
@@ -1904,15 +1904,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1260,
+              "id": 1262,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1259,
+                  "id": 1261,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1261,
+                  "scope": 1263,
                   "src": "4538:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1921,7 +1921,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1258,
+                    "id": 1260,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4538:7:7",
@@ -1936,14 +1936,14 @@
               ],
               "src": "4537:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4478:69:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1263,
+        "scope": 1265,
         "src": "1462:3087:7"
       }
     ],
@@ -1953,14 +1953,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/prototype.sol",
     "exportedSymbols": {
       "Prototype": [
-        1262
+        1264
       ]
     },
-    "id": 1263,
+    "id": 1265,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1130,
+        "id": 1132,
         "literals": [
           "solidity",
           "^",
@@ -1976,9 +1976,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 1262,
+        "id": 1264,
         "linearizedBaseContracts": [
-          1262
+          1264
         ],
         "name": "Prototype",
         "nodeType": "ContractDefinition",
@@ -1986,7 +1986,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return master address of self",
-            "id": 1137,
+            "id": 1139,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1994,15 +1994,15 @@
             "name": "master",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1133,
+              "id": 1135,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1132,
+                  "id": 1134,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1137,
+                  "scope": 1139,
                   "src": "1580:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2011,7 +2011,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1131,
+                    "id": 1133,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1580:7:7",
@@ -2028,15 +2028,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1136,
+              "id": 1138,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1135,
+                  "id": 1137,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1137,
+                  "scope": 1139,
                   "src": "1616:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2045,7 +2045,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1134,
+                    "id": 1136,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1616:7:7",
@@ -2060,7 +2060,7 @@
               ],
               "src": "1615:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "1564:61:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2069,7 +2069,7 @@
           {
             "body": null,
             "documentation": "@notice 'newMaster' will be set to contract 'self' and this function only works when msg sender is the old master.\n @param self contract address\n @param newMaster new master account which will be set.",
-            "id": 1144,
+            "id": 1146,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2077,15 +2077,15 @@
             "name": "setMaster",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1142,
+              "id": 1144,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1139,
+                  "id": 1141,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1144,
+                  "scope": 1146,
                   "src": "1873:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2094,7 +2094,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1138,
+                    "id": 1140,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1873:7:7",
@@ -2108,10 +2108,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1141,
+                  "id": 1143,
                   "name": "newMaster",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1144,
+                  "scope": 1146,
                   "src": "1887:17:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2120,7 +2120,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1140,
+                    "id": 1142,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1887:7:7",
@@ -2137,12 +2137,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1143,
+              "id": 1145,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1914:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "1854:61:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2151,7 +2151,7 @@
           {
             "body": null,
             "documentation": "@param self account address which may be contract account or external account address.\n @param blockNumber balance will be calculated at blockNumber\n @return the amount of VET at blockNumber",
-            "id": 1153,
+            "id": 1155,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2159,15 +2159,15 @@
             "name": "balance",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1149,
+              "id": 1151,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1146,
+                  "id": 1148,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2151:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2176,7 +2176,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1145,
+                    "id": 1147,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2151:7:7",
@@ -2190,10 +2190,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1148,
+                  "id": 1150,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2165:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2202,7 +2202,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1147,
+                    "id": 1149,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2165:4:7",
@@ -2219,15 +2219,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1152,
+              "id": 1154,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1151,
+                  "id": 1153,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1153,
+                  "scope": 1155,
                   "src": "2205:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2236,7 +2236,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1150,
+                    "id": 1152,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2205:7:7",
@@ -2251,7 +2251,7 @@
               ],
               "src": "2204:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2134:80:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2260,7 +2260,7 @@
           {
             "body": null,
             "documentation": "@param self account address which may be contract account or external account address.\n @param blockNumber energy will be calculated at blockNumber\n @return the amount of energy at blockNumber",
-            "id": 1162,
+            "id": 1164,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2268,15 +2268,15 @@
             "name": "energy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1158,
+              "id": 1160,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1155,
+                  "id": 1157,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2451:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2285,7 +2285,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1154,
+                    "id": 1156,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2451:7:7",
@@ -2299,10 +2299,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1157,
+                  "id": 1159,
                   "name": "blockNumber",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2465:16:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2311,7 +2311,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1156,
+                    "id": 1158,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2465:4:7",
@@ -2328,15 +2328,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1161,
+              "id": 1163,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1160,
+                  "id": 1162,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1162,
+                  "scope": 1164,
                   "src": "2505:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2345,7 +2345,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1159,
+                    "id": 1161,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2505:7:7",
@@ -2360,7 +2360,7 @@
               ],
               "src": "2504:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2435:79:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2369,7 +2369,7 @@
           {
             "body": null,
             "documentation": "@param self check if address self is a contract account",
-            "id": 1169,
+            "id": 1171,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2377,15 +2377,15 @@
             "name": "hasCode",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1165,
+              "id": 1167,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1164,
+                  "id": 1166,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1169,
+                  "scope": 1171,
                   "src": "2601:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2394,7 +2394,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1163,
+                    "id": 1165,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2601:7:7",
@@ -2411,15 +2411,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1168,
+              "id": 1170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1167,
+                  "id": 1169,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1169,
+                  "scope": 1171,
                   "src": "2637:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2428,7 +2428,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1166,
+                    "id": 1168,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2637:4:7",
@@ -2443,7 +2443,7 @@
               ],
               "src": "2636:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2584:59:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2452,7 +2452,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return value indexed by key at self storage",
-            "id": 1178,
+            "id": 1180,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2460,15 +2460,15 @@
             "name": "storageFor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1174,
+              "id": 1176,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1171,
+                  "id": 1173,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2759:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2477,7 +2477,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1170,
+                    "id": 1172,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2759:7:7",
@@ -2491,10 +2491,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1173,
+                  "id": 1175,
                   "name": "key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2773:11:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2503,7 +2503,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1172,
+                    "id": 1174,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2773:7:7",
@@ -2520,15 +2520,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1177,
+              "id": 1179,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1176,
+                  "id": 1178,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1178,
+                  "scope": 1180,
                   "src": "2808:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2537,7 +2537,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1175,
+                    "id": 1177,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "2808:7:7",
@@ -2552,7 +2552,7 @@
               ],
               "src": "2807:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2739:78:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2561,7 +2561,7 @@
           {
             "body": null,
             "documentation": "@param self contract address\n @return the creditPlan of contract 'self'",
-            "id": 1187,
+            "id": 1189,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2569,15 +2569,15 @@
             "name": "creditPlan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1181,
+              "id": 1183,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1180,
+                  "id": 1182,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2930:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2586,7 +2586,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1179,
+                    "id": 1181,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2930:7:7",
@@ -2603,15 +2603,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1186,
+              "id": 1188,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1183,
+                  "id": 1185,
                   "name": "credit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2966:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2620,7 +2620,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1182,
+                    "id": 1184,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2966:7:7",
@@ -2634,10 +2634,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1185,
+                  "id": 1187,
                   "name": "recoveryRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1187,
+                  "scope": 1189,
                   "src": "2982:20:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2646,7 +2646,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1184,
+                    "id": 1186,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2982:7:7",
@@ -2661,7 +2661,7 @@
               ],
               "src": "2965:38:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "2910:94:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2670,7 +2670,7 @@
           {
             "body": null,
             "documentation": "@param self contract address \n @param credit original credit\n @param recoveryRate recovery rate of credit",
-            "id": 1196,
+            "id": 1198,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2678,15 +2678,15 @@
             "name": "setCreditPlan",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1194,
+              "id": 1196,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1189,
+                  "id": 1191,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3161:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2695,7 +2695,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1188,
+                    "id": 1190,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3161:7:7",
@@ -2709,10 +2709,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1191,
+                  "id": 1193,
                   "name": "credit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3175:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2721,7 +2721,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1190,
+                    "id": 1192,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3175:7:7",
@@ -2735,10 +2735,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1193,
+                  "id": 1195,
                   "name": "recoveryRate",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1196,
+                  "scope": 1198,
                   "src": "3191:20:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2747,7 +2747,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1192,
+                    "id": 1194,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3191:7:7",
@@ -2764,12 +2764,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1195,
+              "id": 1197,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3221:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3138:84:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2778,7 +2778,7 @@
           {
             "body": null,
             "documentation": "@notice check if address 'user' is the user of contract 'self'.",
-            "id": 1205,
+            "id": 1207,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2786,15 +2786,15 @@
             "name": "isUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1201,
+              "id": 1203,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1198,
+                  "id": 1200,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3316:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2803,7 +2803,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1197,
+                    "id": 1199,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3316:7:7",
@@ -2817,10 +2817,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1200,
+                  "id": 1202,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3330:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2829,7 +2829,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1199,
+                    "id": 1201,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3330:7:7",
@@ -2846,15 +2846,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1204,
+              "id": 1206,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1203,
+                  "id": 1205,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1205,
+                  "scope": 1207,
                   "src": "3366:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2863,7 +2863,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1202,
+                    "id": 1204,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "3366:4:7",
@@ -2878,7 +2878,7 @@
               ],
               "src": "3365:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3300:72:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2887,7 +2887,7 @@
           {
             "body": null,
             "documentation": "@notice return the current credit of 'user' of the contract 'self'.",
-            "id": 1214,
+            "id": 1216,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2895,15 +2895,15 @@
             "name": "userCredit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1210,
+              "id": 1212,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1207,
+                  "id": 1209,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3474:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2912,7 +2912,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1206,
+                    "id": 1208,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3474:7:7",
@@ -2926,10 +2926,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1209,
+                  "id": 1211,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3488:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2938,7 +2938,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1208,
+                    "id": 1210,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3488:7:7",
@@ -2955,15 +2955,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1213,
+              "id": 1215,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1212,
+                  "id": 1214,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1214,
+                  "scope": 1216,
                   "src": "3524:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2972,7 +2972,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1211,
+                    "id": 1213,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "3524:7:7",
@@ -2987,7 +2987,7 @@
               ],
               "src": "3523:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3454:79:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -2996,7 +2996,7 @@
           {
             "body": null,
             "documentation": "@notice add address 'user' to the user list of a contract 'self'.",
-            "id": 1221,
+            "id": 1223,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3004,15 +3004,15 @@
             "name": "addUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1219,
+              "id": 1221,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1216,
+                  "id": 1218,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1221,
+                  "scope": 1223,
                   "src": "3630:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3021,7 +3021,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1215,
+                    "id": 1217,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3630:7:7",
@@ -3035,10 +3035,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1218,
+                  "id": 1220,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1221,
+                  "scope": 1223,
                   "src": "3644:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3047,7 +3047,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1217,
+                    "id": 1219,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3644:7:7",
@@ -3064,12 +3064,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1220,
+              "id": 1222,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3666:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3613:54:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3078,7 +3078,7 @@
           {
             "body": null,
             "documentation": "@notice remove 'user' from the user list of a contract 'self'.",
-            "id": 1228,
+            "id": 1230,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3086,15 +3086,15 @@
             "name": "removeUser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1226,
+              "id": 1228,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1223,
+                  "id": 1225,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1228,
+                  "scope": 1230,
                   "src": "3764:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3103,7 +3103,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1222,
+                    "id": 1224,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3764:7:7",
@@ -3117,10 +3117,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1225,
+                  "id": 1227,
                   "name": "user",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1228,
+                  "scope": 1230,
                   "src": "3778:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3129,7 +3129,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1224,
+                    "id": 1226,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3778:7:7",
@@ -3146,12 +3146,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1227,
+              "id": 1229,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3800:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3744:57:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3160,7 +3160,7 @@
           {
             "body": null,
             "documentation": "@notice msg sender volunteers to be a sponsor of the contract 'self'.",
-            "id": 1233,
+            "id": 1235,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3168,15 +3168,15 @@
             "name": "sponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1231,
+              "id": 1233,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1230,
+                  "id": 1232,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1233,
+                  "scope": 1235,
                   "src": "3902:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3185,7 +3185,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1229,
+                    "id": 1231,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "3902:7:7",
@@ -3202,12 +3202,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1232,
+              "id": 1234,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "3924:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "3885:40:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3216,7 +3216,7 @@
           {
             "body": null,
             "documentation": "@notice msg sender removes itself from the sponsor candidates list of contract 'self'.",
-            "id": 1238,
+            "id": 1240,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3224,15 +3224,15 @@
             "name": "unsponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1236,
+              "id": 1238,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1235,
+                  "id": 1237,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1238,
+                  "scope": 1240,
                   "src": "4046:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3241,7 +3241,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1234,
+                    "id": 1236,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4046:7:7",
@@ -3258,12 +3258,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1237,
+              "id": 1239,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4068:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4027:42:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3272,7 +3272,7 @@
           {
             "body": null,
             "documentation": "@notice check if 'sponsorAddress' is the sponser of contract 'self'.",
-            "id": 1247,
+            "id": 1249,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3280,15 +3280,15 @@
             "name": "isSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1243,
+              "id": 1245,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1240,
+                  "id": 1242,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4171:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3297,7 +3297,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1239,
+                    "id": 1241,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4171:7:7",
@@ -3311,10 +3311,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1242,
+                  "id": 1244,
                   "name": "sponsorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4185:22:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3323,7 +3323,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1241,
+                    "id": 1243,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4185:7:7",
@@ -3340,15 +3340,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1246,
+              "id": 1248,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1245,
+                  "id": 1247,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1247,
+                  "scope": 1249,
                   "src": "4231:4:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3357,7 +3357,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1244,
+                    "id": 1246,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "4231:4:7",
@@ -3372,7 +3372,7 @@
               ],
               "src": "4230:6:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4152:85:7",
             "stateMutability": "view",
             "superFunction": null,
@@ -3381,7 +3381,7 @@
           {
             "body": null,
             "documentation": "@notice select 'sponsorAddress' to be current selected sponsor of contract 'self'",
-            "id": 1254,
+            "id": 1256,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -3389,15 +3389,15 @@
             "name": "selectSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1252,
+              "id": 1254,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1249,
+                  "id": 1251,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1254,
+                  "scope": 1256,
                   "src": "4356:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3406,7 +3406,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1248,
+                    "id": 1250,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4356:7:7",
@@ -3420,10 +3420,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1251,
+                  "id": 1253,
                   "name": "sponsorAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1254,
+                  "scope": 1256,
                   "src": "4370:22:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3432,7 +3432,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1250,
+                    "id": 1252,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4370:7:7",
@@ -3449,12 +3449,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1253,
+              "id": 1255,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "4402:0:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4333:70:7",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3463,7 +3463,7 @@
           {
             "body": null,
             "documentation": "@notice return current selected sponsor of contract 'self'",
-            "id": 1261,
+            "id": 1263,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3471,15 +3471,15 @@
             "name": "currentSponsor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1257,
+              "id": 1259,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1256,
+                  "id": 1258,
                   "name": "self",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1261,
+                  "scope": 1263,
                   "src": "4502:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3488,7 +3488,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1255,
+                    "id": 1257,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4502:7:7",
@@ -3505,15 +3505,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1260,
+              "id": 1262,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1259,
+                  "id": 1261,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1261,
+                  "scope": 1263,
                   "src": "4538:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3522,7 +3522,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1258,
+                    "id": 1260,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "4538:7:7",
@@ -3537,14 +3537,14 @@
               ],
               "src": "4537:9:7"
             },
-            "scope": 1262,
+            "scope": 1264,
             "src": "4478:69:7",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1263,
+        "scope": 1265,
         "src": "1462:3087:7"
       }
     ],
@@ -3556,5 +3556,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-06T21:12:16.177Z"
+  "updatedAt": "2018-12-07T03:18:58.599Z"
 }
