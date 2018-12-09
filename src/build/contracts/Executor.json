@@ -123,14 +123,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/executor.sol",
     "exportedSymbols": {
       "Executor": [
-        1045
+        1087
       ]
     },
-    "id": 1046,
+    "id": 1088,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1003,
+        "id": 1045,
         "literals": [
           "solidity",
           "^",
@@ -146,9 +146,9 @@
         "contractKind": "interface",
         "documentation": "@title Executor represents core component for on-chain governance. \n The on-chain governance params can be changed by the Executor through a voting.\n A executive committee are composed to seven approvers who had been added to the contract Executor in the genesis block.\n The new approver can be added and the old approver also can be removed from the executive committee.\n The steps of executor include proposing, approving and executing voting if the voting was passed.\n Only the approver in the executive committee has the authority to propose and approving a voting.",
         "fullyImplemented": false,
-        "id": 1045,
+        "id": 1087,
         "linearizedBaseContracts": [
-          1045
+          1087
         ],
         "name": "Executor",
         "nodeType": "ContractDefinition",
@@ -156,7 +156,7 @@
           {
             "body": null,
             "documentation": "@notice proposing a voting from a approver\n @param _target a contract address, it will be executed if the voting is passed.\n @param _data call data, usually composed to method ID plus input data.",
-            "id": 1012,
+            "id": 1054,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -164,15 +164,15 @@
             "name": "propose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1008,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1005,
+                  "id": 1047,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "880:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -181,7 +181,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1004,
+                    "id": 1046,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "880:7:4",
@@ -195,10 +195,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1007,
+                  "id": 1049,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "897:11:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -207,7 +207,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1006,
+                    "id": 1048,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "897:5:4",
@@ -224,15 +224,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1011,
+              "id": 1053,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1010,
+                  "id": 1052,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "927:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -241,7 +241,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1009,
+                    "id": 1051,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "927:7:4",
@@ -256,7 +256,7 @@
               ],
               "src": "926:9:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "863:73:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -265,7 +265,7 @@
           {
             "body": null,
             "documentation": "@notice approving a voting from a approver\n @param _proposalID identify a voting",
-            "id": 1017,
+            "id": 1059,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -273,15 +273,15 @@
             "name": "approve",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1015,
+              "id": 1057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1014,
+                  "id": 1056,
                   "name": "_proposalID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1017,
+                  "scope": 1059,
                   "src": "1055:19:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -290,7 +290,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1013,
+                    "id": 1055,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1055:7:4",
@@ -307,12 +307,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1016,
+              "id": 1058,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1084:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1038:47:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -321,7 +321,7 @@
           {
             "body": null,
             "documentation": "@notice If the voting is passed, the '_proposalID' will be executed.\n If the two-thirds of approvers in the executive committee approve a voting, the voting will be passed.\n The voting must be finished one week, or it will be faied no matter pass or not.",
-            "id": 1022,
+            "id": 1064,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -329,15 +329,15 @@
             "name": "execute",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1020,
+              "id": 1062,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1019,
+                  "id": 1061,
                   "name": "_proposalID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1022,
+                  "scope": 1064,
                   "src": "1385:19:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -346,7 +346,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1018,
+                    "id": 1060,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1385:7:4",
@@ -363,12 +363,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1021,
+              "id": 1063,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1414:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1368:47:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -377,7 +377,7 @@
           {
             "body": null,
             "documentation": "@notice add new a new pprover '_approver' to the executive committee\n @param _approver account address of the '_approver'\n @param _identity the id of the '_approver'",
-            "id": 1029,
+            "id": 1071,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -385,15 +385,15 @@
             "name": "addApprover",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1027,
+              "id": 1069,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1024,
+                  "id": 1066,
                   "name": "_approver",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1029,
+                  "scope": 1071,
                   "src": "1630:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -402,7 +402,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1023,
+                    "id": 1065,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1630:7:4",
@@ -416,10 +416,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1026,
+                  "id": 1068,
                   "name": "_identity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1029,
+                  "scope": 1071,
                   "src": "1649:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -428,7 +428,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1025,
+                    "id": 1067,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1649:7:4",
@@ -445,12 +445,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1028,
+              "id": 1070,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1676:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1609:68:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -459,7 +459,7 @@
           {
             "body": null,
             "documentation": "@notice remove an old approver '_approver' from the executive committee",
-            "id": 1034,
+            "id": 1076,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -467,15 +467,15 @@
             "name": "revokeApprover",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1032,
+              "id": 1074,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1031,
+                  "id": 1073,
                   "name": "_approver",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1034,
+                  "scope": 1076,
                   "src": "1787:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -484,7 +484,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1030,
+                    "id": 1072,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1787:7:4",
@@ -501,12 +501,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1033,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1814:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1763:52:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -515,7 +515,7 @@
           {
             "body": null,
             "documentation": "@notice The contract which is attached can propose a voting",
-            "id": 1039,
+            "id": 1081,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -523,15 +523,15 @@
             "name": "attachVotingContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1037,
+              "id": 1079,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1036,
+                  "id": 1078,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1039,
+                  "scope": 1081,
                   "src": "1919:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -540,7 +540,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1035,
+                    "id": 1077,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1919:7:4",
@@ -557,12 +557,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1038,
+              "id": 1080,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1946:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1889:58:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -571,7 +571,7 @@
           {
             "body": null,
             "documentation": "@notice detach a voting",
-            "id": 1044,
+            "id": 1086,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -579,15 +579,15 @@
             "name": "detachVotingContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1042,
+              "id": 1084,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1041,
+                  "id": 1083,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1044,
+                  "scope": 1086,
                   "src": "2015:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -596,7 +596,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1040,
+                    "id": 1082,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2015:7:4",
@@ -613,19 +613,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1043,
+              "id": 1085,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2042:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1985:58:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1046,
+        "scope": 1088,
         "src": "616:1429:4"
       }
     ],
@@ -635,14 +635,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/executor.sol",
     "exportedSymbols": {
       "Executor": [
-        1045
+        1087
       ]
     },
-    "id": 1046,
+    "id": 1088,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1003,
+        "id": 1045,
         "literals": [
           "solidity",
           "^",
@@ -658,9 +658,9 @@
         "contractKind": "interface",
         "documentation": "@title Executor represents core component for on-chain governance. \n The on-chain governance params can be changed by the Executor through a voting.\n A executive committee are composed to seven approvers who had been added to the contract Executor in the genesis block.\n The new approver can be added and the old approver also can be removed from the executive committee.\n The steps of executor include proposing, approving and executing voting if the voting was passed.\n Only the approver in the executive committee has the authority to propose and approving a voting.",
         "fullyImplemented": false,
-        "id": 1045,
+        "id": 1087,
         "linearizedBaseContracts": [
-          1045
+          1087
         ],
         "name": "Executor",
         "nodeType": "ContractDefinition",
@@ -668,7 +668,7 @@
           {
             "body": null,
             "documentation": "@notice proposing a voting from a approver\n @param _target a contract address, it will be executed if the voting is passed.\n @param _data call data, usually composed to method ID plus input data.",
-            "id": 1012,
+            "id": 1054,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -676,15 +676,15 @@
             "name": "propose",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1008,
+              "id": 1050,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1005,
+                  "id": 1047,
                   "name": "_target",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "880:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -693,7 +693,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1004,
+                    "id": 1046,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "880:7:4",
@@ -707,10 +707,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1007,
+                  "id": 1049,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "897:11:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -719,7 +719,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1006,
+                    "id": 1048,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "897:5:4",
@@ -736,15 +736,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1011,
+              "id": 1053,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1010,
+                  "id": 1052,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1012,
+                  "scope": 1054,
                   "src": "927:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -753,7 +753,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1009,
+                    "id": 1051,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "927:7:4",
@@ -768,7 +768,7 @@
               ],
               "src": "926:9:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "863:73:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -777,7 +777,7 @@
           {
             "body": null,
             "documentation": "@notice approving a voting from a approver\n @param _proposalID identify a voting",
-            "id": 1017,
+            "id": 1059,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -785,15 +785,15 @@
             "name": "approve",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1015,
+              "id": 1057,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1014,
+                  "id": 1056,
                   "name": "_proposalID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1017,
+                  "scope": 1059,
                   "src": "1055:19:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -802,7 +802,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1013,
+                    "id": 1055,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1055:7:4",
@@ -819,12 +819,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1016,
+              "id": 1058,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1084:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1038:47:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -833,7 +833,7 @@
           {
             "body": null,
             "documentation": "@notice If the voting is passed, the '_proposalID' will be executed.\n If the two-thirds of approvers in the executive committee approve a voting, the voting will be passed.\n The voting must be finished one week, or it will be faied no matter pass or not.",
-            "id": 1022,
+            "id": 1064,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -841,15 +841,15 @@
             "name": "execute",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1020,
+              "id": 1062,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1019,
+                  "id": 1061,
                   "name": "_proposalID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1022,
+                  "scope": 1064,
                   "src": "1385:19:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -858,7 +858,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1018,
+                    "id": 1060,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1385:7:4",
@@ -875,12 +875,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1021,
+              "id": 1063,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1414:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1368:47:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -889,7 +889,7 @@
           {
             "body": null,
             "documentation": "@notice add new a new pprover '_approver' to the executive committee\n @param _approver account address of the '_approver'\n @param _identity the id of the '_approver'",
-            "id": 1029,
+            "id": 1071,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -897,15 +897,15 @@
             "name": "addApprover",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1027,
+              "id": 1069,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1024,
+                  "id": 1066,
                   "name": "_approver",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1029,
+                  "scope": 1071,
                   "src": "1630:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -914,7 +914,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1023,
+                    "id": 1065,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1630:7:4",
@@ -928,10 +928,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1026,
+                  "id": 1068,
                   "name": "_identity",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1029,
+                  "scope": 1071,
                   "src": "1649:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -940,7 +940,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1025,
+                    "id": 1067,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1649:7:4",
@@ -957,12 +957,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1028,
+              "id": 1070,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1676:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1609:68:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -971,7 +971,7 @@
           {
             "body": null,
             "documentation": "@notice remove an old approver '_approver' from the executive committee",
-            "id": 1034,
+            "id": 1076,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -979,15 +979,15 @@
             "name": "revokeApprover",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1032,
+              "id": 1074,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1031,
+                  "id": 1073,
                   "name": "_approver",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1034,
+                  "scope": 1076,
                   "src": "1787:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -996,7 +996,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1030,
+                    "id": 1072,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1787:7:4",
@@ -1013,12 +1013,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1033,
+              "id": 1075,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1814:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1763:52:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1027,7 +1027,7 @@
           {
             "body": null,
             "documentation": "@notice The contract which is attached can propose a voting",
-            "id": 1039,
+            "id": 1081,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1035,15 +1035,15 @@
             "name": "attachVotingContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1037,
+              "id": 1079,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1036,
+                  "id": 1078,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1039,
+                  "scope": 1081,
                   "src": "1919:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1052,7 +1052,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1035,
+                    "id": 1077,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1919:7:4",
@@ -1069,12 +1069,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1038,
+              "id": 1080,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1946:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1889:58:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1083,7 +1083,7 @@
           {
             "body": null,
             "documentation": "@notice detach a voting",
-            "id": 1044,
+            "id": 1086,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1091,15 +1091,15 @@
             "name": "detachVotingContract",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1042,
+              "id": 1084,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1041,
+                  "id": 1083,
                   "name": "_contract",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1044,
+                  "scope": 1086,
                   "src": "2015:17:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1108,7 +1108,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1040,
+                    "id": 1082,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2015:7:4",
@@ -1125,19 +1125,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1043,
+              "id": 1085,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2042:0:4"
             },
-            "scope": 1045,
+            "scope": 1087,
             "src": "1985:58:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1046,
+        "scope": 1088,
         "src": "616:1429:4"
       }
     ],
@@ -1149,5 +1149,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-07T03:18:58.591Z"
+  "updatedAt": "2018-12-09T03:48:55.244Z"
 }

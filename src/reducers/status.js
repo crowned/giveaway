@@ -3,6 +3,7 @@ const initialState = {
   availSpots: 0,
   spotCost: 0,
   status: false,
+  giveawayStatus: false,
 };
 
 export default function (state = initialState, action) {
@@ -15,7 +16,8 @@ export default function (state = initialState, action) {
         numSpots: payload[0] || 0,
         availSpots: payload[1] || 0,
         spotCost: payload[2] || 0,
-        status: payload[3] || false,
+        canReserve: payload[3] || false,
+        giveawayStatus: payload[4] || false,
       }
     default:
       return state;

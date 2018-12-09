@@ -18,8 +18,11 @@ class Reward extends Component {
   constructor(props) {
     super(props);
 
+    const { web3 } = props.web3;
+    this.web3 = web3;
+
     this.state = {
-      reward: '',
+      reward: this.web3.utils.fromWei(props.energy, 'ether'),
     };
 
     this.pollReward = this.pollReward.bind(this);
@@ -43,8 +46,7 @@ class Reward extends Component {
   }
 
   setEnergy(energy) {
-    const { web3 } = this.props.web3;
-    const reward = web3.utils.fromWei(energy, 'ether');
+    const reward = this.web3.utils.fromWei(energy, 'ether');
 
     this.setState({ reward });
   }

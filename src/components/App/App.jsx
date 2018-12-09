@@ -41,9 +41,6 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 class App extends Component {
-  static format(web3, num) {
-    return web3.utils.fromWei(num, 'ether');
-  }
   constructor(props, context) {
     super(props);
 
@@ -61,7 +58,7 @@ class App extends Component {
   componentDidMount() {
     this.props.onLoad();
 
-    this.pollAccounts();
+    // this.pollAccounts();
   }
 
   componentWillReceiveProps({ web3, giveaway, accounts }) {
@@ -102,12 +99,7 @@ class App extends Component {
     Contract.events.Winner((err, result) => {
       this.props.onWinner(err, result);
       if (!err) {
-        const { returnValues } = result
-
-        const ownerFee = web3.utils.fromWei(returnValues.ownerFee, 'ether');
-        const payoutToWinner = web3.utils.fromWei(returnValues.payoutToWinner, 'ether');
-        const totalPayout = web3.utils.fromWei(returnValues.totalPayout, 'ether');
-        const { winner } = returnValues;
+        console.log(result)
       }
 
     });
@@ -118,7 +110,7 @@ class App extends Component {
     const finishedLoading = !web3.isLoading && !giveaway.isLoading && !accounts.isLoading;
 
     if (!finishedLoading) {
-      return <p>Loading</p>
+      return <Loading />
     }
 
     if (_.isEmpty(accounts.accounts)) {

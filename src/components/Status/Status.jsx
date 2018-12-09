@@ -15,7 +15,8 @@ const StyledStatus = styled.div`
   justify-content: space-between;
   margin-bottom: 12px;
 
-  label {
+  label,
+  span {
     white-space: nowrap;
   }
 `;
@@ -44,6 +45,9 @@ class Status extends Component {
   constructor(props) {
     super(props);
 
+    const { web3 } = props.web3;
+    this.web3 = web3;
+
     this.state = {
       ...props.status,
     };
@@ -62,12 +66,11 @@ class Status extends Component {
   }
 
   setStatus(status) {
-    const { web3 } = this.props.web3;
     const { spotCost, ...rest } = status;
 
     this.setState({
       ...rest,
-      spotCost: web3.utils.fromWei(spotCost.toString(), 'ether'),
+      spotCost: this.web3.utils.fromWei(spotCost.toString(), 'ether'),
     });
   }
 
@@ -76,7 +79,8 @@ class Status extends Component {
       numSpots,
       availSpots,
       spotCost,
-      status,
+      canReserve,
+      giveawayStatus,
     } = this.state;
 
     return (
@@ -93,9 +97,17 @@ class Status extends Component {
           </FormattedNumber>
         </StyledStatus>
         <StyledStatus>
+          <label>Beneficiary chosen</label>
+          <Spacer />
+          { giveawayStatus ?
+            <span>Not yet</span> :
+            <span>Yes check below</span>
+          }
+        </StyledStatus>
+        <StyledStatus>
           <label>Giveaway status</label>
           <Spacer />
-          { status ?
+          { canReserve ?
             <span>Open</span> :
             <span>Closed</span>
           }

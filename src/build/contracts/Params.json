@@ -63,14 +63,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/params.sol",
     "exportedSymbols": {
       "Params": [
-        1130
+        1172
       ]
     },
-    "id": 1131,
+    "id": 1173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1110,
+        "id": 1152,
         "literals": [
           "solidity",
           "^",
@@ -86,9 +86,9 @@
         "contractKind": "interface",
         "documentation": "@title Params stores the governance params of VeChain thor.\n The params can be set by the executor, a contract that is authorized to modify governance params by a voting Committee.\n Anyone can get the params just by calling \"get\" funtion.\n The governance params is written in genesis block at launch time.\n You can check these params at source file: https://github.com/vechain/thor/blob/master/thor/params.go.",
         "fullyImplemented": false,
-        "id": 1130,
+        "id": 1172,
         "linearizedBaseContracts": [
-          1130
+          1172
         ],
         "name": "Params",
         "nodeType": "ContractDefinition",
@@ -96,7 +96,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1115,
+            "id": 1157,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -104,22 +104,22 @@
             "name": "executor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1111,
+              "id": 1153,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "493:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1114,
+              "id": 1156,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1113,
+                  "id": 1155,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1115,
+                  "scope": 1157,
                   "src": "518:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -128,7 +128,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1112,
+                    "id": 1154,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "518:7:6",
@@ -143,7 +143,7 @@
               ],
               "src": "517:9:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "476:51:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -152,7 +152,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1122,
+            "id": 1164,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -160,15 +160,15 @@
             "name": "set",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1120,
+              "id": 1162,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1117,
+                  "id": 1159,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1122,
+                  "scope": 1164,
                   "src": "545:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -177,7 +177,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1116,
+                    "id": 1158,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "545:7:6",
@@ -191,10 +191,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1119,
+                  "id": 1161,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1122,
+                  "scope": 1164,
                   "src": "559:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -203,7 +203,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1118,
+                    "id": 1160,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "559:7:6",
@@ -220,12 +220,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1121,
+              "id": 1163,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "583:0:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "532:52:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -234,7 +234,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1129,
+            "id": 1171,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -242,15 +242,15 @@
             "name": "get",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1125,
+              "id": 1167,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1124,
+                  "id": 1166,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1129,
+                  "scope": 1171,
                   "src": "602:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -259,7 +259,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1123,
+                    "id": 1165,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "602:7:6",
@@ -276,15 +276,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1128,
+              "id": 1170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1127,
+                  "id": 1169,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1129,
+                  "scope": 1171,
                   "src": "638:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -293,7 +293,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1126,
+                    "id": 1168,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "638:7:6",
@@ -308,14 +308,14 @@
               ],
               "src": "637:9:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "589:58:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1131,
+        "scope": 1173,
         "src": "453:196:6"
       }
     ],
@@ -325,14 +325,14 @@
     "absolutePath": "/Users/kenneth/Projects/giveaway/contracts/helper_contracts/vechain/params.sol",
     "exportedSymbols": {
       "Params": [
-        1130
+        1172
       ]
     },
-    "id": 1131,
+    "id": 1173,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1110,
+        "id": 1152,
         "literals": [
           "solidity",
           "^",
@@ -348,9 +348,9 @@
         "contractKind": "interface",
         "documentation": "@title Params stores the governance params of VeChain thor.\n The params can be set by the executor, a contract that is authorized to modify governance params by a voting Committee.\n Anyone can get the params just by calling \"get\" funtion.\n The governance params is written in genesis block at launch time.\n You can check these params at source file: https://github.com/vechain/thor/blob/master/thor/params.go.",
         "fullyImplemented": false,
-        "id": 1130,
+        "id": 1172,
         "linearizedBaseContracts": [
-          1130
+          1172
         ],
         "name": "Params",
         "nodeType": "ContractDefinition",
@@ -358,7 +358,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1115,
+            "id": 1157,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -366,22 +366,22 @@
             "name": "executor",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1111,
+              "id": 1153,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "493:2:6"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1114,
+              "id": 1156,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1113,
+                  "id": 1155,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1115,
+                  "scope": 1157,
                   "src": "518:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -390,7 +390,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1112,
+                    "id": 1154,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "518:7:6",
@@ -405,7 +405,7 @@
               ],
               "src": "517:9:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "476:51:6",
             "stateMutability": "view",
             "superFunction": null,
@@ -414,7 +414,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1122,
+            "id": 1164,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -422,15 +422,15 @@
             "name": "set",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1120,
+              "id": 1162,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1117,
+                  "id": 1159,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1122,
+                  "scope": 1164,
                   "src": "545:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -439,7 +439,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1116,
+                    "id": 1158,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "545:7:6",
@@ -453,10 +453,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1119,
+                  "id": 1161,
                   "name": "_value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1122,
+                  "scope": 1164,
                   "src": "559:14:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -465,7 +465,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1118,
+                    "id": 1160,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "559:7:6",
@@ -482,12 +482,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1121,
+              "id": 1163,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "583:0:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "532:52:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -496,7 +496,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 1129,
+            "id": 1171,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -504,15 +504,15 @@
             "name": "get",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1125,
+              "id": 1167,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1124,
+                  "id": 1166,
                   "name": "_key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1129,
+                  "scope": 1171,
                   "src": "602:12:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -521,7 +521,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1123,
+                    "id": 1165,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "602:7:6",
@@ -538,15 +538,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1128,
+              "id": 1170,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1127,
+                  "id": 1169,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1129,
+                  "scope": 1171,
                   "src": "638:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -555,7 +555,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1126,
+                    "id": 1168,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "638:7:6",
@@ -570,14 +570,14 @@
               ],
               "src": "637:9:6"
             },
-            "scope": 1130,
+            "scope": 1172,
             "src": "589:58:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1131,
+        "scope": 1173,
         "src": "453:196:6"
       }
     ],
@@ -589,5 +589,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-12-07T03:18:58.587Z"
+  "updatedAt": "2018-12-09T03:48:55.242Z"
 }

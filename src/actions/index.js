@@ -1,18 +1,31 @@
 import Giveaway from '../build/contracts/Giveaway.json';
 import getWeb3 from '../utils/getWeb3';
 
-const address = '0x74bb99ef163e9e0c6bb9a0408028bb7f63fea089';
+const address = '0x538ef847fe27c503121dd61d8310ab5b81932286';
 
 export const loadWeb3 = () => {
   return dispatch => {
     return dispatch({
       type: 'WEB3_INITIALIZED',
       payload: getWeb3,
-    }).then((value) => {
+    }).then(() => {
       dispatch(getAccounts());
     });
   };
 };
+
+export const getBalance = () => {
+  return (dispatch, getState) => {
+    const { Contract } = getState().giveaway;
+
+    const { getBalance } = Contract.methods;
+
+    return dispatch({
+      type: 'GET_BALANCE',
+      payload: getBalance().call(),
+    });
+  };
+}
 
 export const getAccounts = () => {
   return (dispatch, getState) => {
@@ -182,3 +195,21 @@ export const isOwner = account => {
     return owner === account;
   }
 };
+
+export const withdraw = () => {
+  return async (dispatch, getState) => {
+    const { Contract } = getState().giveaway;
+    const { accounts } = getState().accounts;
+    const { withdraw } = Contract.methods;
+
+    const data = { from: accounts[0] };
+
+    const fn = withdraw();
+    const gas = await fn.estimateGas(data);
+
+    return dispatch({
+      type: 'REFUND',
+      payload: fn.send({ ...data, gas })
+    })
+  }
+}

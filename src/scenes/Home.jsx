@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ParticipantsContainer from '../containers/ParticipantsContainer';
 import PlayerStatusContainer from '../containers/PlayerStatusContainer';
 import NotificationContainer from '../containers/NotificationContainer';
+import WithdrawContainer from '../containers/WithdrawContainer';
 import WinnersContainer from '../containers/WinnersContainer';
 import RewardContainer from '../containers/RewardContainer';
 import StatusContainer from '../containers/StatusContainer';
@@ -22,6 +23,7 @@ class Home extends Component {
         <RewardContainer />
         <PlayerStatusContainer />
         <Instructions />
+        <WithdrawContainer />
         <StatusContainer />
         <ParticipantsContainer />
         <WinnersContainer />

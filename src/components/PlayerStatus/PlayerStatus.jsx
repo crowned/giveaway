@@ -41,6 +41,7 @@ class PlayerStatus extends Component {
     }
 
     this.getPlayerStatus = this.getPlayerStatus.bind(this);
+    this.withdraw = this.withdraw.bind(this);
   }
 
   componentWillReceiveProps({ participants }) {
@@ -58,6 +59,10 @@ class PlayerStatus extends Component {
     this.setState({ isPlaying });
   }
 
+  withdraw() {
+    this.props.withdraw();
+  }
+
   render() { 
     const { accounts } = this.props.accounts;
     const { isPlaying } = this.state;
@@ -68,10 +73,12 @@ class PlayerStatus extends Component {
         <Status>
           <small>your address:</small>
           <h4>{ accounts[0] }</h4>
+
           { isPlaying ? 
             <small>your spot is reserved</small> :
             <small>you are not participating</small>
           }
+
         </Status>
 
         <Spacer />

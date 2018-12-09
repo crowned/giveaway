@@ -2,8 +2,6 @@ import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
 
-import Button from '../Button';
-
 const Wrapper = styled.div`
   margin-top: 50px;
 `;
@@ -22,11 +20,6 @@ const Address = styled.div`
   &:hover {
     text-decoration: underline;
   }
-`;
-
-const Title = styled.div`
-  display: flex;
-  justify-content: space-between;
 `;
 
 const Spacer = styled.div`
@@ -85,9 +78,7 @@ class Participants extends Component {
 
     return (
       <Wrapper>
-        <Title>
-          <h3>Current Players</h3>
-        </Title>
+        <h3>Current Players</h3>
         { participants.map(participant => (
           <Participant key={participant}>
             <Spacer />

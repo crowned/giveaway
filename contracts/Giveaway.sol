@@ -1,22 +1,25 @@
 pragma solidity ^0.4.24;
 
 import "./helper_contracts/zeppelin/Ownable.sol";
-import "./helper_contracts/vechain/builtin.sol";
+import "./helper_contracts/vechain/energy.sol";
 
 /** VeChain Giveaway Smart Contract.*/
 contract Giveaway is Ownable {
-    using Builtin for Giveaway;
+    Energy energy = Energy(0x0000000000000000000000000000456E65726779);
 
-    struct Receipt {
-        uint amount;
+    struct Payout {
+        uint ownerFee;
+        uint totalPayout;
+        uint payoutToWinner;
     }
 
-    uint private numSpots;
-    uint private availSpots;
-    uint private spotCost;
-    uint private generatedAmount;
-    uint private counter;
-    bool private status;
+    uint public counter;
+    uint public numSpots;
+    uint public spotCost;
+    bool public canReserve;
+    uint public availSpots;
+    uint public generatedVET;
+    bool public giveawayStatus;
 
     address[] public winners;
     address[] public playerAddresses;
@@ -25,10 +28,7 @@ contract Giveaway is Ownable {
     mapping (uint => address) internal players;
 
     // mapping to have address to Receipt struct
-    mapping (address => Receipt) internal receipts;
-
-    // Event which will be emmitted once winner is found.
-    event Winner(address winner, uint ownerFee, uint payoutToWinner, uint totalPayout);
+    mapping (address => uint) internal receipts;
 
     // Event which will be emmitted once a spot is reserved;
     event SpotReserved(address player);
@@ -36,14 +36,21 @@ contract Giveaway is Ownable {
     // Event which will be emmitted once all spots are reserved;
     event AllSpotsReserved(uint spots);
 
+    // Event which will be emmitted once winner is found.
+    event Winner(address winner, uint ownerFee, uint payoutToWinner, uint totalPayout);
+
     /** function getGiveawayStatus returns current status of giveaway
      */
-    function getGiveawayStatus() public view returns(uint, uint, uint, bool) {
-        return (numSpots, availSpots, spotCost, status);
+    function getGiveawayStatus() public view returns(uint, uint, uint, bool, bool) {
+        return (numSpots, availSpots, spotCost, canReserve, giveawayStatus);
     }
 
     function getEnergy() public view returns(uint) {
-        return this.$energy(block.number);
+        return energy.balanceOf(this);
+    }
+
+    function getBalance() public view returns(uint) {
+        return address(this).balance;
     }
 
     function getWinners() public view returns(address[]) {
@@ -59,71 +66,80 @@ contract Giveaway is Ownable {
       * @param cost - cost of the spot.
      */
     function startGiveaway(uint spots, uint cost) public payable onlyOwner {
-        if ((spots <= 1) || (cost == 0) || (msg.value < cost)) {
-            revert("startGiveaway error");
-        }
+        require((spots > 0) || (cost > 0) || (msg.value >= cost), "cannot start giveaway");
+
         address manager = owner();
         numSpots = spots;
         spotCost = cost;
         availSpots = numSpots - 1;
+
+        // players is used to get winner
         players[++counter] = manager;
-        // increase the generatedAmount
-        generatedAmount += msg.value;
-        // set the status to True
-        status = true;
+
+        // increase the generatedVET
+        generatedVET += msg.value;
+
+        // set the reservation status
+        canReserve = true;
+
+        // set the giveaway status
+        giveawayStatus = true;
+
+
+        // used to get list of current players
         playerAddresses.push(manager);
-        receipts[msg.sender] = Receipt(msg.value);
+
+        receipts[manager] = msg.value;
+    }
+
+    /** function returnFunds withdraws given amount */
+    function withdraw() public payable {
+        require(giveawayStatus == false, "cannot withdraw while giveaway is running");
+
+        uint amount = receipts[msg.sender];
+
+        receipts[msg.sender] = 0;
+        msg.sender.transfer(amount);
+    }
+
+    // fallback incase msg sender does not return funds
+    function withdrawByAddress(address player) public payable onlyOwner {
+        require(giveawayStatus == false, "cannot withdraw while giveaway is running");
+        uint amount = receipts[player];
+
+        receipts[player] = 0;
+        msg.sender.transfer(amount);
     }
 
     /** function hasPlayed checks if msg.sender has reserved a spot 
       * @return reserved - if msg.sender has reserved a spot
      */
-    function hasReserved() internal view returns(bool) {
-        bool played;
-
-        /** use uint in an array as var can only hold 255 elements
-          * and the playerAddresses array may contain more than 255
-         */
-        for (uint i = 0; i < playerAddresses.length; i++) {
-            if (msg.sender != playerAddresses[i]) {
-                played = false;
-            } else {
-                played = true;
-            }
-        }
-
-        return played;
-    }
-
-    /** function returnFunds returns funds to user
-      * when all spots are reserved.
-     */
-    function returnFunds() public payable {
-        for (uint i = 0; i < playerAddresses.length; i++) {
-            address player = playerAddresses[i];
-            player.transfer(receipts[player].amount);
-        }
+    function hasNotReserved(address player) internal view returns(bool) {
+        uint amount = receipts[player];
+        return amount == 0;
     }
 
     /** function reserveSpot allows user to reserve spots
      */
     function reserveSpot() public payable {
-        // revert in case user already has bought a reserved a spot OR,
-        // value sent is less than the spot cost OR,
-        // status is false.
-        if (hasReserved() || (msg.value < spotCost) || (!status) || (availSpots == 0)) {
-            revert("reserveSpot error");
-        }
+        bool hasntReserved = hasNotReserved(msg.sender);
+        // require player to not have already reserved a spot OR,
+        // value sent is greater or equal to spotCost OR,
+        // canReserve is true OR,
+        // there are available spots
+        require((hasntReserved) && (msg.value >= spotCost) && (canReserve) && (availSpots > 0), "cannot reserve spot");
 
         availSpots = availSpots - 1;
         players[++counter] = msg.sender;
-        generatedAmount += msg.value;
+        generatedVET += msg.value;
         playerAddresses.push(msg.sender);
-        receipts[msg.sender] = Receipt(msg.value);
+
+        receipts[msg.sender] = msg.value;
 
         emit SpotReserved(msg.sender);
 
         if (availSpots == 0) {
+            canReserve = false;
             emit AllSpotsReserved(availSpots);
         }
     }
@@ -131,11 +147,6 @@ contract Giveaway is Ownable {
     /** endGiveaway function which would be called only by Owner.
      */
     function endGiveaway() public onlyOwner {
-        (
-            availSpots == 0,
-            "more spots available"
-        );
-
         resetGiveaway();
     }
 
@@ -144,12 +155,16 @@ contract Giveaway is Ownable {
       * and takes a creates a 10% owner fee from energy
       * @return (ownerFee, payoutToWinner) - payouts to owner and winner
      */
-    function calculatePayout() internal view returns(uint, uint, uint) {
-        uint totalPayout = getEnergy(); 
-        uint ownerFee = totalPayout / 10;
-        uint payoutToWinner = totalPayout - ownerFee;
+    function calculatePayout() internal view returns(Payout payout) {
+        uint totalPayout = getEnergy();
 
-        return (ownerFee, payoutToWinner, totalPayout);
+        payout = Payout({
+            totalPayout: totalPayout,
+            ownerFee: totalPayout / 10,
+            payoutToWinner: totalPayout - (totalPayout / 10)
+        });
+
+        return payout;
     }
 
     /** getWinner getter function. 
@@ -160,14 +175,14 @@ contract Giveaway is Ownable {
         uint winnerIndex = getRandomNumber();
         address winnerAddress = players[winnerIndex];
         address manager = owner();
-        (uint ownerFee, uint payoutToWinner, uint totalPayout) = calculatePayout();
 
-        emit Winner(winnerAddress, ownerFee, payoutToWinner, totalPayout);
+        Payout memory payout = calculatePayout();
 
-        returnFunds();
         winners.push(winnerAddress);
-        this.$moveEnergyTo(manager, ownerFee);
-        this.$moveEnergyTo(winnerAddress, payoutToWinner);
+        energy.transfer(manager, payout.ownerFee);
+        energy.transfer(winnerAddress, payout.payoutToWinner);
+
+        emit Winner(winnerAddress, payout.ownerFee, payout.payoutToWinner, payout.totalPayout);
     }
 
     /** getRandomNumber function, which finds the random number using counter.
@@ -180,9 +195,9 @@ contract Giveaway is Ownable {
     /** resetGiveaway function resets giveaway and find the Winner.
      */
     function resetGiveaway() internal {
-        status = false;
+        giveawayStatus = false;
         getWinner();
-        generatedAmount = 0;
+        generatedVET = 0;
         numSpots = 0;
         availSpots = 0;
         spotCost = 0;
