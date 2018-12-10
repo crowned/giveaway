@@ -7,6 +7,7 @@ import HeaderContainer from '../../containers/HeaderContainer';
 import AdminRouteContainer from '../../containers/AdminRouteContainer';
 
 import Home from '../../scenes/Home';
+import Faq from '../../scenes/Faq';
 
 import AccountUnavailable from '../AccountUnavailable';
 import Loading from  '../Loading';
@@ -126,6 +127,7 @@ class App extends Component {
             <HeaderContainer />
 
             <Route path="/" exact component={Home} />
+            <Route path="/faq" exact component={Faq} />
             <AdminRouteContainer />
 
           </Fragment>
